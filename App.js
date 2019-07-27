@@ -13,7 +13,6 @@ const seq = new Sequelize('vdo', 'root', '', {
   },
 );
 
-
 seq
   .authenticate()
   .then(() => {
