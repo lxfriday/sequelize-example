@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node App.js"
+    "start": "node App.js",
+    "sequelize": "sequelize-auto -o ./src/db/model -t tpk -d testdb -h localhost -u root -p 8889 -x root -e mysql"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mysql": "^2.17.1",
     "mysql2": "^1.6.5",
-    "sequelize": "^5.10.3",
+    "sequelize": "^5.10.3"
+  },
+  "devDependencies": {
     "sequelize-auto": "^0.4.29"
   }
 }
